@@ -62,3 +62,429 @@
 2020-01-22 15:14:21,979 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DemoApplication in 3.844 seconds (JVM running for 4.28)
 2020-01-22 15:14:33,621 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-01-22 15:14:33,622 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-01-22 15:14:33,654 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 30 ms
+2020-01-22 17:06:14,709 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-6] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:06:14,959 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 19792 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:06:14,960 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:06:15,720 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:06:15,721 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:06:15,722 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:06:15,722 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:06:15,734 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:06:15,735 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 768 ms
+2020-01-22 17:06:15,820 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consumeWebService' defined in file [C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes\com\arup\demo\ConsumeWebService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The public type ConsumeWebService must be defined in its own file
+	Autowired cannot be resolved to a type
+	RestTemplate cannot be resolved to a type
+	HttpHeaders cannot be resolved to a type
+	HttpHeaders cannot be resolved to a type
+	MediaType cannot be resolved to a variable
+	HttpEntity cannot be resolved to a type
+	HttpEntity cannot be resolved to a type
+	RestTemplate cannot be resolved to a type
+	HttpMethod cannot be resolved to a variable
+
+2020-01-22 17:06:15,821 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2020-01-22 17:06:15,828 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-22 17:06:15,833 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consumeWebService' defined in file [C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes\com\arup\demo\ConsumeWebService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The public type ConsumeWebService must be defined in its own file
+	Autowired cannot be resolved to a type
+	RestTemplate cannot be resolved to a type
+	HttpHeaders cannot be resolved to a type
+	HttpHeaders cannot be resolved to a type
+	MediaType cannot be resolved to a variable
+	HttpEntity cannot be resolved to a type
+	HttpEntity cannot be resolved to a type
+	RestTemplate cannot be resolved to a type
+	HttpMethod cannot be resolved to a variable
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.arup.demo.DemoApplication.main(DemoApplication.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The public type ConsumeWebService must be defined in its own file
+	Autowired cannot be resolved to a type
+	RestTemplate cannot be resolved to a type
+	HttpHeaders cannot be resolved to a type
+	HttpHeaders cannot be resolved to a type
+	MediaType cannot be resolved to a variable
+	HttpEntity cannot be resolved to a type
+	HttpEntity cannot be resolved to a type
+	RestTemplate cannot be resolved to a type
+	HttpMethod cannot be resolved to a variable
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The public type ConsumeWebService must be defined in its own file
+	Autowired cannot be resolved to a type
+	RestTemplate cannot be resolved to a type
+	HttpHeaders cannot be resolved to a type
+	HttpHeaders cannot be resolved to a type
+	MediaType cannot be resolved to a variable
+	HttpEntity cannot be resolved to a type
+	HttpEntity cannot be resolved to a type
+	RestTemplate cannot be resolved to a type
+	HttpMethod cannot be resolved to a variable
+
+	at com.arup.demo.ConsumeWebService.<init>(DemoApplication.java:91)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203)
+	... 24 common frames omitted
+2020-01-22 17:07:41,882 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 19792 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:07:41,883 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:07:42,571 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:07:42,572 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:07:42,572 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:07:42,573 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:07:42,585 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:07:42,586 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 701 ms
+2020-01-22 17:07:42,652 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consumeWebService' defined in file [C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes\com\arup\demo\ConsumeWebService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+2020-01-22 17:07:42,654 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2020-01-22 17:07:42,660 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-22 17:07:42,661 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consumeWebService' defined in file [C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes\com\arup\demo\ConsumeWebService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.arup.demo.DemoApplication.main(DemoApplication.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+	at com.arup.demo.ConsumeWebService.<init>(DemoApplication.java:97)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203)
+	... 24 common frames omitted
+2020-01-22 17:08:23,369 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 19792 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:08:23,369 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:08:23,887 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:08:23,888 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:08:23,889 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:08:23,889 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:08:23,899 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:08:23,900 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 528 ms
+2020-01-22 17:08:23,984 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'consumeWebService': Unsatisfied dependency expressed through field 'restTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.web.client.RestTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-01-22 17:08:23,985 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2020-01-22 17:08:23,990 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-22 17:08:24,124 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field restTemplate in com.arup.demo.ConsumeWebService required a bean of type 'org.springframework.web.client.RestTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.client.RestTemplate' in your configuration.
+
+2020-01-22 17:10:59,096 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 19792 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:10:59,096 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:10:59,570 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:10:59,571 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:10:59,571 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:10:59,571 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:10:59,581 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:10:59,581 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 482 ms
+2020-01-22 17:10:59,628 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consumeWebService' defined in file [C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes\com\arup\demo\ConsumeWebService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+2020-01-22 17:10:59,628 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2020-01-22 17:10:59,633 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-22 17:10:59,634 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consumeWebService' defined in file [C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes\com\arup\demo\ConsumeWebService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.arup.demo.DemoApplication.main(DemoApplication.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+	at com.arup.demo.ConsumeWebService.<init>(DemoApplication.java:97)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203)
+	... 24 common frames omitted
+2020-01-22 17:12:23,994 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 19792 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:12:23,994 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:12:24,497 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:12:24,498 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:12:24,498 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:12:24,499 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:12:24,510 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:12:24,510 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 513 ms
+2020-01-22 17:12:24,568 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consumeWebService' defined in file [C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes\com\arup\demo\ConsumeWebService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+2020-01-22 17:12:24,569 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2020-01-22 17:12:24,576 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-22 17:12:24,577 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'consumeWebService' defined in file [C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes\com\arup\demo\ConsumeWebService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.arup.demo.DemoApplication.main(DemoApplication.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.arup.demo.ConsumeWebService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:216)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The public type ConsumeWebService must be defined in its own file
+
+	at com.arup.demo.ConsumeWebService.<init>(DemoApplication.java:100)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:203)
+	... 24 common frames omitted
+2020-01-22 17:12:46,286 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 19792 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:12:46,287 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:12:46,686 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:12:46,687 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:12:46,687 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:12:46,688 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:12:46,696 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:12:46,697 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 409 ms
+2020-01-22 17:12:46,828 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:12:46,862 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-22 17:12:46,911 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-01-22 17:12:46,913 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-22 17:12:46,933 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:12:46,957 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 17:12:46,959 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DemoApplication in 0.698 seconds (JVM running for 7110.083)
+2020-01-22 17:12:46,973 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-01-22 17:14:02,640 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 17:14:02,642 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-01-22 17:14:02,645 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 3 ms
+2020-01-22 17:19:52,970 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:20:02,026 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 23472 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:20:02,030 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:20:02,076 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-22 17:20:02,077 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-22 17:20:03,778 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:20:03,787 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:20:03,787 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:20:03,788 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:20:03,849 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:20:03,850 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1773 ms
+2020-01-22 17:20:04,904 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:20:05,165 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-22 17:20:05,434 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-01-22 17:20:05,446 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-22 17:20:05,500 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:20:05,539 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 17:20:05,544 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DemoApplication in 4.047 seconds (JVM running for 4.494)
+2020-01-22 17:20:10,475 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 17:20:10,475 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-01-22 17:20:10,501 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 25 ms
+2020-01-22 17:21:37,814 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:21:45,369 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 26468 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:21:45,373 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:21:45,416 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-22 17:21:45,416 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-22 17:21:47,282 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:21:47,291 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:21:47,292 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:21:47,292 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:21:47,352 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:21:47,352 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1935 ms
+2020-01-22 17:21:48,368 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:21:48,592 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-22 17:21:48,880 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-01-22 17:21:48,890 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-22 17:21:48,968 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:21:49,016 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 17:21:49,019 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DemoApplication in 4.048 seconds (JVM running for 4.496)
+2020-01-22 17:21:52,801 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 17:21:52,802 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-01-22 17:21:52,835 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 33 ms
+2020-01-22 17:22:44,835 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-6] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:22:45,125 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 26468 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:22:45,126 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:22:45,811 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:22:45,812 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:22:45,812 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:22:45,813 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:22:45,823 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:22:45,824 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 693 ms
+2020-01-22 17:22:46,060 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:22:46,094 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-22 17:22:46,170 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-01-22 17:22:46,173 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-22 17:22:46,186 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:22:46,198 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 17:22:46,199 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DemoApplication in 1.131 seconds (JVM running for 61.671)
+2020-01-22 17:22:46,202 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-01-22 17:22:49,496 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 17:22:49,497 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-01-22 17:22:49,501 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 4 ms
+2020-01-22 17:23:23,938 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:23:24,230 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 26468 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:23:24,230 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:23:24,867 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:23:24,868 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:23:24,868 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:23:24,868 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:23:24,879 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:23:24,880 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 648 ms
+2020-01-22 17:23:25,074 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:23:25,110 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-22 17:23:25,168 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-01-22 17:23:25,171 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-22 17:23:25,183 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:23:25,193 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 17:23:25,194 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DemoApplication in 0.996 seconds (JVM running for 100.665)
+2020-01-22 17:23:25,197 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2020-01-22 17:23:54,916 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 17:23:54,917 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-01-22 17:23:54,919 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 2 ms
+2020-01-22 17:23:59,352 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:24:07,243 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting DemoApplication on B4XK9W2 with PID 19792 (C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling\demo\target\classes started by ABasu1 in C:\ARUP\ARUP_JAVA\SPRINGBOOT\SPRINGBOOT_VSCODE\SpringBoot_logging_ExceptionHandling)
+2020-01-22 17:24:07,247 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-01-22 17:24:07,300 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-22 17:24:07,300 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-22 17:24:09,262 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9090 (http)
+2020-01-22 17:24:09,272 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:24:09,273 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-01-22 17:24:09,273 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-22 17:24:09,334 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-22 17:24:09,335 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2035 ms
+2020-01-22 17:24:10,593 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 17:24:10,933 WARN org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-22 17:24:11,367 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-01-22 17:24:11,377 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-01-22 17:24:11,464 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9090"]
+2020-01-22 17:24:11,520 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 17:24:11,524 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started DemoApplication in 4.719 seconds (JVM running for 5.322)
+2020-01-22 17:24:16,428 INFO org.apache.juli.logging.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 17:24:16,429 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
